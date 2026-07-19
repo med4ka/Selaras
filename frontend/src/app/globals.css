@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAF8F5; /* canvas */
+  --foreground: #292524; /* ink */
+}
+
+@theme {
+  --font-sans: var(--font-ibm-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Warm Paper palette — light mode only (Fase 1) */
+  --color-canvas: #FAF8F5;
+  --color-ink: #292524;
+  --color-ink-muted: #78716C;
+  --color-ledger-navy: #1E3A5F;
+  --color-surface: #FFFFFF;
+
+  /* Status sync — konsisten di seluruh aplikasi */
+  --color-sync-amber: #D97706;
+  --color-sync-emerald: #059669;
+  --color-conflict-red: #DC2626;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
